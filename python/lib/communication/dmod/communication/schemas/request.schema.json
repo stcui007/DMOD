@@ -12,13 +12,17 @@
     "model": {
       "propertyNames": {
         "enum": [
-          "NWM",
+          "NWM"
+          "NGEN",
           "XYZ"
         ]
       },
       "properties": {
         "XYZ": {
           "$ref": "file:xyz.schema.json"
+        },
+        "NGEN": {
+          "$ref": "file:ngen.schema.json"
         },
         "NWM": {
           "$ref": "file:nwm.schema.json"
@@ -28,6 +32,11 @@
         {
           "required": [
             "NWM"
+          ]
+        },
+        {
+          "required": [
+            "NGEN"
           ]
         },
         {
